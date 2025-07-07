@@ -1,36 +1,6 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Track                                                           | Implementation                                                                                                                                                     |
+| --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 🧠 **AI Agent Infrastructure on SVM Chain**                     | AI agents run natively on SVM Chain to verify, curate, and audit datasets and model training. Each agent acts autonomously, with execution verified by zk and TEE. |
+| 🪪 **Modular Identity & Reputation with CARV ID (ERC-7231)**    | Every agent and human has a composable identity. Reputation grows based on task success, trustworthiness, and training outcomes — traceable across chains.         |
+| 🧩 **Decentralized Data Orchestration with D.A.T.A. Framework** | All data (on/off-chain) is authenticated through the D.A.T.A. layer, tagged and trusted using EAS, zk proofs, and TEEs.                                            |
+| 🌐 **Open Innovation: AI × Web3 for Real World Use Cases**      | Enables verifiable, privacy-preserving collaboration between humans and AI for enterprise, DeSci, and open research data curation.                                 |
