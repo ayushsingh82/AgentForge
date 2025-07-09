@@ -10,24 +10,79 @@ export default function Home() {
       {/* Hero Section */}
       <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center">
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6">
-              The Future of{' '}
-              <span className="text-[#824CFF]">AI Infrastructure</span>
-              <br />
-              is Decentralized
-            </h1>
-            <p className="text-xl sm:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto">
-              AI agents running natively on SVM Chain with verifiable execution, 
-              modular identity systems, and decentralized data orchestration.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-[#824CFF] hover:bg-[#9a5cff] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200">
-                Get Started
-              </button>
-              <button className="border border-[#824CFF] text-[#824CFF] hover:bg-[#824CFF] hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200">
-                View Documentation
-              </button>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left Column - Text Content */}
+            <div className="text-left">
+              <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6">
+                The Future of{' '}
+                <span className="text-[#824CFF]">AI Infrastructure</span>
+                <br />
+                is Decentralized
+              </h1>
+              <p className="text-xl sm:text-2xl text-gray-300 mb-8">
+                AI agents running natively on SVM Chain with verifiable execution, 
+                modular identity systems, and decentralized data orchestration.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <button className="bg-[#824CFF] hover:bg-[#9a5cff] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200">
+                  Get Started
+                </button>
+                <button className="border border-[#824CFF] text-[#824CFF] hover:bg-[#824CFF] hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200">
+                  View Documentation
+                </button>
+              </div>
+            </div>
+
+            {/* Right Column - Globe/Grid Visualization */}
+            <div className="relative flex justify-center lg:justify-end">
+              <div className="relative w-80 h-80 lg:w-96 lg:h-96">
+                {/* Outer Ring */}
+                <div className="absolute inset-0 border-2 border-[#824CFF]/30 rounded-full animate-spin-slow"></div>
+                
+                {/* Middle Ring */}
+                <div className="absolute inset-8 border-2 border-[#824CFF]/50 rounded-full animate-spin-slow-reverse"></div>
+                
+                {/* Inner Ring */}
+                <div className="absolute inset-16 border-2 border-[#824CFF]/70 rounded-full animate-spin-slow"></div>
+                
+                {/* Grid Pattern */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="grid grid-cols-3 gap-4 w-48 h-48">
+                    {[...Array(9)].map((_, i) => (
+                      <div 
+                        key={i}
+                        className="bg-[#824CFF]/20 border border-[#824CFF]/40 rounded-lg animate-pulse"
+                        style={{ animationDelay: `${i * 0.1}s` }}
+                      ></div>
+                    ))}
+                  </div>
+                </div>
+                
+                {/* Central Globe */}
+                <div className="absolute inset-24 bg-gradient-to-br from-[#824CFF] to-[#9a5cff] rounded-full flex items-center justify-center shadow-2xl shadow-[#824CFF]/50">
+                  <div className="text-white font-bold text-2xl">CARV</div>
+                </div>
+                
+                {/* Floating Nodes */}
+                <div className="absolute top-4 left-4 w-3 h-3 bg-[#824CFF] rounded-full animate-bounce"></div>
+                <div className="absolute top-8 right-8 w-2 h-2 bg-[#824CFF] rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
+                <div className="absolute bottom-6 left-8 w-2 h-2 bg-[#824CFF] rounded-full animate-bounce" style={{ animationDelay: '1s' }}></div>
+                <div className="absolute bottom-4 right-4 w-3 h-3 bg-[#824CFF] rounded-full animate-bounce" style={{ animationDelay: '1.5s' }}></div>
+                
+                {/* Connection Lines */}
+                <svg className="absolute inset-0 w-full h-full" viewBox="0 0 320 320">
+                  <defs>
+                    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stopColor="#824CFF" stopOpacity="0.3"/>
+                      <stop offset="100%" stopColor="#824CFF" stopOpacity="0.1"/>
+                    </linearGradient>
+                  </defs>
+                  <line x1="40" y1="40" x2="280" y2="280" stroke="url(#lineGradient)" strokeWidth="1" className="animate-pulse"/>
+                  <line x1="280" y1="40" x2="40" y2="280" stroke="url(#lineGradient)" strokeWidth="1" className="animate-pulse" style={{ animationDelay: '0.5s' }}/>
+                  <line x1="160" y1="20" x2="160" y2="300" stroke="url(#lineGradient)" strokeWidth="1" className="animate-pulse" style={{ animationDelay: '1s' }}/>
+                  <line x1="20" y1="160" x2="300" y2="160" stroke="url(#lineGradient)" strokeWidth="1" className="animate-pulse" style={{ animationDelay: '1.5s' }}/>
+                </svg>
+              </div>
             </div>
           </div>
         </div>

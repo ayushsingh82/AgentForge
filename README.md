@@ -4,3 +4,6 @@
 | 🪪 **Modular Identity & Reputation with CARV ID (ERC-7231)**    | Every agent and human has a composable identity. Reputation grows based on task success, trustworthiness, and training outcomes — traceable across chains.         |
 | 🧩 **Decentralized Data Orchestration with D.A.T.A. Framework** | All data (on/off-chain) is authenticated through the D.A.T.A. layer, tagged and trusted using EAS, zk proofs, and TEEs.                                            |
 | 🌐 **Open Innovation: AI × Web3 for Real World Use Cases**      | Enables verifiable, privacy-preserving collaboration between humans and AI for enterprise, DeSci, and open research data curation.                                 |
+
+
+Leveraging CARV SVM Chain for Privacy and Trustless Data Sharing

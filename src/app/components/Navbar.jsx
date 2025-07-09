@@ -27,19 +27,16 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <Link href="#features" className="text-white hover:text-[#824CFF] transition-colors duration-200">
+              <Link href="/features" className="text-white hover:text-[#824CFF] transition-colors duration-200">
                 Features
               </Link>
-              <Link href="#technology" className="text-white hover:text-[#824CFF] transition-colors duration-200">
-                Technology
+              <Link href="/marketplace" className="text-white hover:text-[#824CFF] transition-colors duration-200">
+                Marketplace
               </Link>
-              <Link href="#ecosystem" className="text-white hover:text-[#824CFF] transition-colors duration-200">
-                Ecosystem
-              </Link>
-              <Link href="#developers" className="text-white hover:text-[#824CFF] transition-colors duration-200">
+              <Link href="/developers" className="text-white hover:text-[#824CFF] transition-colors duration-200">
                 Developers
               </Link>
-              <Link href="#about" className="text-white hover:text-[#824CFF] transition-colors duration-200">
+              <Link href="/about" className="text-white hover:text-[#824CFF] transition-colors duration-200">
                 About
               </Link>
             </div>
@@ -48,7 +45,7 @@ const Navbar = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Link 
-              href="#get-started"
+              href="/developers"
               className="bg-[#824CFF] hover:bg-[#9a5cff] text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200"
             >
               Get Started
@@ -77,35 +74,28 @@ const Navbar = () => {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-black/95 border-t border-gray-800">
               <Link 
-                href="#features" 
+                href="/features" 
                 className="text-white hover:text-[#824CFF] block px-3 py-2 transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Features
               </Link>
               <Link 
-                href="#technology" 
+                href="/marketplace" 
                 className="text-white hover:text-[#824CFF] block px-3 py-2 transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Technology
+                Marketplace
               </Link>
               <Link 
-                href="#ecosystem" 
-                className="text-white hover:text-[#824CFF] block px-3 py-2 transition-colors duration-200"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Ecosystem
-              </Link>
-              <Link 
-                href="#developers" 
+                href="/developers" 
                 className="text-white hover:text-[#824CFF] block px-3 py-2 transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Developers
               </Link>
               <Link 
-                href="#about" 
+                href="/about" 
                 className="text-white hover:text-[#824CFF] block px-3 py-2 transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -113,7 +103,7 @@ const Navbar = () => {
               </Link>
               <div className="pt-4">
                 <Link 
-                  href="#get-started"
+                  href="/developers"
                   className="bg-[#824CFF] hover:bg-[#9a5cff] text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200 block text-center"
                   onClick={() => setIsMenuOpen(false)}
                 >
