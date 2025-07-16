@@ -30,6 +30,9 @@ const Navbar = () => {
               <Link href="/List" className="text-white hover:text-[#824CFF] transition-colors duration-200">
                 List 
               </Link>
+              <Link href="/marketplace" className="text-white hover:text-[#824CFF] transition-colors duration-200">
+                Marketplace 
+              </Link>
               {/* <Link href="/marketplace" className="text-white hover:text-[#824CFF] transition-colors duration-200">
                 Marketplace
               </Link>

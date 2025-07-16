@@ -376,7 +376,7 @@ const List = () => {
 
       <div>
         <label className="block text-sm font-medium text-gray-300 mb-2">
-          🔗 GitHub/Repo Link
+          🔗 GitHub/Repo Link (Optional)
         </label>
         <input
           type="url"
