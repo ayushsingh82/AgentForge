@@ -15,11 +15,9 @@ interface FormData {
   
   // Technical Configuration
   configFile: File | null;
-  executionEnvironment: string;
   modelName: string;
   apiKey: string;
   executable: File | null;
-  repoLink: string;
   
   // Behavioral Settings
   swarmParticipation: boolean;
@@ -30,7 +28,6 @@ interface FormData {
   pricingPerCall: string;
   paymentReceiver: string;
   escrowSupport: boolean;
-  gasSponsorModel: string;
 }
 
 const List = () => {
@@ -45,11 +42,9 @@ const List = () => {
     
     // Technical Configuration
     configFile: null,
-    executionEnvironment: '',
     modelName: '',
     apiKey: '',
     executable: null,
-    repoLink: '',
     
     // Behavioral Settings
     swarmParticipation: false,
@@ -60,7 +55,6 @@ const List = () => {
     pricingPerCall: '',
     paymentReceiver: '',
     escrowSupport: false,
-    gasSponsorModel: ''
   });
 
   const [currentStep, setCurrentStep] = useState(1);
@@ -78,13 +72,6 @@ const List = () => {
     'Custom'
   ];
 
-  const executionEnvironments = [
-    'DeepSeek',
-    'OpenAI', 
-    'Custom',
-    'TEE'
-  ];
-
   const memorySharingOptions = [
     'Public',
     'Private',
@@ -100,12 +87,6 @@ const List = () => {
     'Manual Call',
     'Scheduled',
     'Custom Webhook'
-  ];
-
-  const gasSponsorModels = [
-    'User Pays',
-    'Agent Pays',
-    'Subsidized'
   ];
 
   const handleInputChange = (field: keyof FormData, value: string | boolean) => {
@@ -319,24 +300,7 @@ const List = () => {
 
       <div>
         <label className="block text-sm font-medium text-gray-300 mb-2">
-          ⚡ Execution Environment *
-        </label>
-        <select
-          value={formData.executionEnvironment}
-          onChange={(e) => handleInputChange('executionEnvironment', e.target.value)}
-          className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:border-[#824CFF] focus:outline-none"
-          required
-        >
-          <option value="">Select execution environment</option>
-          {executionEnvironments.map(env => (
-            <option key={env} value={env}>{env}</option>
-          ))}
-        </select>
-      </div>
-
-      <div>
-        <label className="block text-sm font-medium text-gray-300 mb-2">
-          🧪 Model Name / Endpoint *
+          🧪 Model Name / Endpoint (Optional)
         </label>
         <input
           type="text"
@@ -344,7 +308,6 @@ const List = () => {
           onChange={(e) => handleInputChange('modelName', e.target.value)}
           className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:border-[#824CFF] focus:outline-none"
           placeholder="e.g., deepseek-chat, gpt-4"
-          required
         />
       </div>
 
@@ -372,19 +335,6 @@ const List = () => {
           className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:border-[#824CFF] focus:outline-none"
         />
         <p className="text-sm text-gray-400 mt-1">Upload the compiled agent if off-chain agent is executed separately</p>
-      </div>
-
-      <div>
-        <label className="block text-sm font-medium text-gray-300 mb-2">
-          🔗 GitHub/Repo Link (Optional)
-        </label>
-        <input
-          type="url"
-          value={formData.repoLink}
-          onChange={(e) => handleInputChange('repoLink', e.target.value)}
-          className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:border-[#824CFF] focus:outline-none"
-          placeholder="Optional link to the agent repo"
-        />
       </div>
     </div>
   );
@@ -499,22 +449,6 @@ const List = () => {
           />
           <div className="w-11 h-6 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#824CFF]"></div>
         </label>
-      </div>
-
-      <div>
-        <label className="block text-sm font-medium text-gray-300 mb-2">
-          ⛽ Gas Sponsor Model
-        </label>
-        <select
-          value={formData.gasSponsorModel}
-          onChange={(e) => handleInputChange('gasSponsorModel', e.target.value)}
-          className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:border-[#824CFF] focus:outline-none"
-        >
-          <option value="">Select gas sponsor model</option>
-          {gasSponsorModels.map(model => (
-            <option key={model} value={model}>{model}</option>
-          ))}
-        </select>
       </div>
     </div>
   );
