@@ -27,10 +27,10 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <Link href="/features" className="text-white hover:text-[#824CFF] transition-colors duration-200">
-                Features
+              <Link href="/List" className="text-white hover:text-[#824CFF] transition-colors duration-200">
+                List 
               </Link>
-              <Link href="/marketplace" className="text-white hover:text-[#824CFF] transition-colors duration-200">
+              {/* <Link href="/marketplace" className="text-white hover:text-[#824CFF] transition-colors duration-200">
                 Marketplace
               </Link>
               <Link href="/developers" className="text-white hover:text-[#824CFF] transition-colors duration-200">
@@ -38,14 +38,14 @@ const Navbar = () => {
               </Link>
               <Link href="/about" className="text-white hover:text-[#824CFF] transition-colors duration-200">
                 About
-              </Link>
+              </Link> */}
             </div>
           </div>
 
           {/* CTA Button */}
           <div className="hidden md:block">
             <Link 
-              href="/developers"
+              href="/"
               className="bg-[#824CFF] hover:bg-[#9a5cff] text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200"
             >
               Get Started
