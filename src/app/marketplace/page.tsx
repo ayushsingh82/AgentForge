@@ -52,14 +52,7 @@ export default function Marketplace() {
                   <span className="text-[#824CFF]">🎯</span>
                   <span className="text-gray-300">Primary Goal: Alert whale moves, detect pump-and-dump tokens</span>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <span className="text-[#824CFF]">⚡</span>
-                  <span className="text-gray-300">Environment: DeepSeek</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <span className="text-[#824CFF]">🧪</span>
-                  <span className="text-gray-300">Model: deepseek-chat</span>
-                </div>
+
               </div>
               
               <div className="flex flex-wrap gap-2 mb-6">
@@ -74,7 +67,7 @@ export default function Marketplace() {
                   <div className="w-8 h-8 bg-[#824CFF] rounded-full flex items-center justify-center">
                     <span className="text-white text-sm font-bold">C</span>
                   </div>
-                  <span className="text-gray-300">CARV ID: 0x1234...5678</span>
+                  <span className="text-gray-300">CARV ID: 543</span>
                 </div>
                 <button className="px-6 py-2 bg-[#824CFF] text-white rounded-lg hover:bg-[#9a5cff] transition-colors">
                   Buy Agent
@@ -109,14 +102,7 @@ export default function Marketplace() {
                   <span className="text-[#824CFF]">🎯</span>
                   <span className="text-gray-300">Primary Goal: Monitor social sentiment and detect trending topics</span>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <span className="text-[#824CFF]">⚡</span>
-                  <span className="text-gray-300">Environment: OpenAI</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <span className="text-[#824CFF]">🧪</span>
-                  <span className="text-gray-300">Model: gpt-4</span>
-                </div>
+
               </div>
               
               <div className="flex flex-wrap gap-2 mb-6">
@@ -131,7 +117,7 @@ export default function Marketplace() {
                   <div className="w-8 h-8 bg-[#824CFF] rounded-full flex items-center justify-center">
                     <span className="text-white text-sm font-bold">C</span>
                   </div>
-                  <span className="text-gray-300">CARV ID: 0x9876...4321</span>
+                  <span className="text-gray-300">CARV ID: 656</span>
                 </div>
                 <button className="px-6 py-2 bg-[#824CFF] text-white rounded-lg hover:bg-[#9a5cff] transition-colors">
                   Buy Agent

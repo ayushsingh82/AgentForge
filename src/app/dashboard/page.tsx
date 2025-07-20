@@ -49,14 +49,7 @@ export default function Dashboard() {
                   <span className="text-[#824CFF]">🎯</span>
                   <span className="text-gray-300">Primary Goal: Portfolio monitoring and alerts</span>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <span className="text-[#824CFF]">⚡</span>
-                  <span className="text-gray-300">Environment: DeepSeek</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <span className="text-[#824CFF]">🧪</span>
-                  <span className="text-gray-300">Model: deepseek-chat</span>
-                </div>
+
               </div>
               
               <div className="flex flex-wrap gap-2 mb-6">
@@ -71,7 +64,7 @@ export default function Dashboard() {
                   <div className="w-8 h-8 bg-[#824CFF] rounded-full flex items-center justify-center">
                     <span className="text-white text-sm font-bold">A</span>
                   </div>
-                  <span className="text-gray-300">Agent ID: 0xabcd...efgh</span>
+                  <span className="text-gray-300">CARV ID: 789</span>
                 </div>
                 <button className="px-6 py-2 bg-[#824CFF] text-white rounded-lg hover:bg-[#9a5cff] transition-colors">
                   Manage Agent
@@ -106,14 +99,7 @@ export default function Dashboard() {
                   <span className="text-[#824CFF]">🎯</span>
                   <span className="text-gray-300">Primary Goal: Automated trading and strategy execution</span>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <span className="text-[#824CFF]">⚡</span>
-                  <span className="text-gray-300">Environment: OpenAI</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <span className="text-[#824CFF]">🧪</span>
-                  <span className="text-gray-300">Model: gpt-4</span>
-                </div>
+
               </div>
               
               <div className="flex flex-wrap gap-2 mb-6">
@@ -128,7 +114,7 @@ export default function Dashboard() {
                   <div className="w-8 h-8 bg-[#824CFF] rounded-full flex items-center justify-center">
                     <span className="text-white text-sm font-bold">A</span>
                   </div>
-                  <span className="text-gray-300">Agent ID: 0xijkl...mnop</span>
+                  <span className="text-gray-300">CARV ID: 234</span>
                 </div>
                 <button className="px-6 py-2 bg-[#824CFF] text-white rounded-lg hover:bg-[#9a5cff] transition-colors">
                   Manage Agent
