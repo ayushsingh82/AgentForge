@@ -12,7 +12,7 @@ const Footer = () => {
               <div className="w-8 h-8 bg-[#824CFF] rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">C</span>
               </div>
-              <span className="text-white font-bold text-xl">CARV</span>
+              <span className="text-white font-bold text-xl">AgentForge</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
               Decentralized AI agents running natively on SVM Chain with modular identity, 
@@ -100,7 +100,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-400 text-sm">
-            © 2024 CARV. All rights reserved.
+            © 2024 AgentForge. All rights reserved.
           </div>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-400 hover:text-[#824CFF] text-sm transition-colors duration-200">

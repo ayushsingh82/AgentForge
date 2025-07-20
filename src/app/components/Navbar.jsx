@@ -20,7 +20,7 @@ const Navbar = () => {
               <div className="w-8 h-8 bg-[#824CFF] rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">C</span>
               </div>
-              <span className="text-white font-bold text-xl">CARV</span>
+              <span className="text-white font-bold text-xl">AgentForge</span>
             </Link>
           </div>
 
@@ -32,6 +32,9 @@ const Navbar = () => {
               </Link>
               <Link href="/marketplace" className="text-white hover:text-[#824CFF] transition-colors duration-200">
                 Marketplace 
+              </Link>
+              <Link href="/dashboard" className="text-white hover:text-[#824CFF] transition-colors duration-200">
+                Dashboard 
               </Link>
               {/* <Link href="/marketplace" className="text-white hover:text-[#824CFF] transition-colors duration-200">
                 Marketplace
@@ -77,11 +80,11 @@ const Navbar = () => {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-black/95 border-t border-gray-800">
               <Link 
-                href="/features" 
+                href="/List" 
                 className="text-white hover:text-[#824CFF] block px-3 py-2 transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Features
+                List
               </Link>
               <Link 
                 href="/marketplace" 
@@ -91,18 +94,11 @@ const Navbar = () => {
                 Marketplace
               </Link>
               <Link 
-                href="/developers" 
+                href="/dashboard" 
                 className="text-white hover:text-[#824CFF] block px-3 py-2 transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Developers
-              </Link>
-              <Link 
-                href="/about" 
-                className="text-white hover:text-[#824CFF] block px-3 py-2 transition-colors duration-200"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                About
+                Dashboard
               </Link>
               <div className="pt-4">
                 <Link 
