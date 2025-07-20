@@ -52,7 +52,7 @@ export default function Developers() {
               </div>
               <h3 className="text-xl font-bold mb-4">2. Get API Key</h3>
               <div className="bg-gray-800 rounded-lg p-4 mb-4">
-                <code className="text-[#824CFF]">carv.api_key = "your_key"</code>
+                <code className="text-[#824CFF]">carv.api_key = &quot;your_key&quot;</code>
               </div>
               <p className="text-gray-300">Register for a free API key in the developer portal</p>
             </div>

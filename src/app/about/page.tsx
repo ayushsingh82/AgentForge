@@ -35,7 +35,7 @@ export default function About() {
                 maintaining complete transparency and trust through blockchain technology.
               </p>
               <p className="text-lg text-gray-300 mb-6">
-                By combining the power of AI with the security and transparency of blockchain, we're creating a new 
+                By combining the power of AI with the security and transparency of blockchain, we&apos;re creating a new 
                 paradigm where data quality, model performance, and computational integrity are guaranteed through 
                 cryptographic proofs and decentralized verification.
               </p>
@@ -62,8 +62,8 @@ export default function About() {
               <div className="bg-black/50 border border-gray-800 rounded-xl p-8">
                 <h3 className="text-xl font-bold mb-4 text-[#824CFF]">Vision Statement</h3>
                 <p className="text-gray-300 italic">
-                  "To create a world where AI agents operate with complete transparency, where every computation 
-                  is verifiable, and where trust is built through cryptographic proofs rather than blind faith."
+                  &ldquo;To create a world where AI agents operate with complete transparency, where every computation 
+                  is verifiable, and where trust is built through cryptographic proofs rather than blind faith.&rdquo;
                 </p>
               </div>
             </div>
@@ -117,7 +117,7 @@ export default function About() {
               </div>
               <h3 className="text-xl font-bold mb-2">Emily Watson</h3>
               <p className="text-[#824CFF] mb-4">Head of Product</p>
-              <p className="text-gray-300 text-sm">
+                              <p className="text-gray-300 text-sm">
                 Product leader with 10+ years experience in AI and Web3. Previously led product teams 
                 at Coinbase and Anthropic.
               </p>
@@ -181,7 +181,7 @@ export default function About() {
                 <span className="text-2xl">🚀</span>
               </div>
               <h3 className="text-xl font-bold mb-2">Innovation</h3>
-              <p className="text-gray-300">Pushing the boundaries of what's possible in AI and blockchain</p>
+              <p className="text-gray-300">Pushing the boundaries of what&apos;s possible in AI and blockchain</p>
             </div>
           </div>
         </div>
@@ -241,7 +241,7 @@ export default function About() {
             Get in <span className="text-[#824CFF]">Touch</span>
           </h2>
           <p className="text-xl text-gray-300 mb-8">
-            Have questions about CARV? Want to collaborate? We'd love to hear from you.
+            Have questions about CARV? Want to collaborate? We&apos;d love to hear from you.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>

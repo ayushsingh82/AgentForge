@@ -225,4 +225,18 @@ contract Agent is Ownable {
         }
         return activeCount;
     }
+    
+    // Get all agents information
+    function getAllAgents() public view returns (AgentData[] memory) {
+        uint256 totalAgents = _agentIdCounter.current();
+        AgentData[] memory allAgents = new AgentData[](totalAgents);
+        
+        for (uint256 i = 1; i <= totalAgents; i++) {
+            if (agents[i].agentId != 0) {
+                allAgents[i - 1] = agents[i];
+            }
+        }
+        
+        return allAgents;
+    }
 }
