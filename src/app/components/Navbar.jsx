@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,7 +19,7 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-[#824CFF] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">C</span>
+                <span className="text-white font-bold text-lg">A</span>
               </div>
               <span className="text-white font-bold text-xl">AgentForge</span>
             </Link>
@@ -36,26 +37,12 @@ const Navbar = () => {
               <Link href="/dashboard" className="text-white hover:text-[#824CFF] transition-colors duration-200">
                 Dashboard 
               </Link>
-              {/* <Link href="/marketplace" className="text-white hover:text-[#824CFF] transition-colors duration-200">
-                Marketplace
-              </Link>
-              <Link href="/developers" className="text-white hover:text-[#824CFF] transition-colors duration-200">
-                Developers
-              </Link>
-              <Link href="/about" className="text-white hover:text-[#824CFF] transition-colors duration-200">
-                About
-              </Link> */}
             </div>
           </div>
 
-          {/* CTA Button */}
+          {/* Wallet Connect Button */}
           <div className="hidden md:block">
-            <Link 
-              href="/"
-              className="bg-[#824CFF] hover:bg-[#9a5cff] text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200"
-            >
-              Get Started
-            </Link>
+            <ConnectButton />
           </div>
 
           {/* Mobile menu button */}
@@ -101,13 +88,7 @@ const Navbar = () => {
                 Dashboard
               </Link>
               <div className="pt-4">
-                <Link 
-                  href="/developers"
-                  className="bg-[#824CFF] hover:bg-[#9a5cff] text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200 block text-center"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Get Started
-                </Link>
+                <ConnectButton />
               </div>
             </div>
           </div>
